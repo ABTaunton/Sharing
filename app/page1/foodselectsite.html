@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5">
+        <!--Sidebar content-->
+        <h6>Select what you're planning to eat</h6>
+        <p>
+          Search:
+          <input ng-model="$ctrl.query">
+      
+        </p>
+  
+      </div>
+      <div class="col-md-10">
+        <!--Body content-->
+        
+        <ul>
+          <li ng-repeat="foods in $ctrl.food | filter:$ctrl.query">
+            <a href='/#!/foods/winelist'>{{foods.name}}</a>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </div>
