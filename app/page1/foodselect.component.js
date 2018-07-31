@@ -5,8 +5,8 @@ angular.
         controller: ['$http', function FoodListController($http) {
             
             var self = this;
-            $http.get('/foods/foods.json').then(function(response) {
-                self.food = response.data;
+            $http.get('//localhost:9000/food').then(function(response) {
+                self.foodName = response.data;
             });
           }
         ]
