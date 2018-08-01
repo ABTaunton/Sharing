@@ -1,24 +1,44 @@
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-md-5">
+<div >
+    <div >
+      <div >
         <!--Sidebar content-->
         <h6>Select what you're planning to eat</h6>
         <p>
-          Search:
-          <input ng-model="$ctrl.query">
-      
-        </p>
+          <input type="text" id="foodInput" onkeyup="myFunction()" placeholder="Search for food..." ng-model="$ctrl.query">
+         </p>
   
       </div>
-      <div class="col-md-10">
+      <div>
         <!--Body content-->
         
-        <ul>
+        <ul id="myUL">
           <li ng-repeat="foods in $ctrl.foodName | filter:$ctrl.query">
             <a href='/#!/foods/winelist'>{{foods.food}}</a>
           </li>
         </ul>
        
       </div>
+
+      <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i;
+            input = document.getElementById('foodInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+        
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        </script>
+
     </div>
   </div>
