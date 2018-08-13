@@ -8,9 +8,13 @@ angular.
         when('/foods', {
           template: '<foodselect></foodselect>'
         }).
-        when('/foods/winelist', {
+        when('/foods/winelist/', {
           template: '<winelist></winelist>'
         }).
+        when('/foods/winelist/:id', {
+          template: '<winelist></winelist>'
+        }).
+
         otherwise('/foods');
     }
   ]);
