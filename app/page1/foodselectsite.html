@@ -6,11 +6,10 @@
           <input type="text" id="foodInput" placeholder="Search for food..." ng-model="$ctrl.query">
           <div ng-repeat="foods in $ctrl.foodName | filter:$ctrl.query">
           <ul id="myUL">
-            <li><a ng-click="edit(foods)" href="/#!/foods/winelist/{{foods.food}}">{{foods.food}}</a></li>
+            <li><a ng-click="edit(foods)" href="/#!/foods/winelist/{{foods.id}}">{{foods.food}}</a></li>
               </form>
           </ul>
           </div>
       </div>
-          <a>I chose {{selectedFood}}</a>
     </div>
   </div>

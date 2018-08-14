@@ -2,7 +2,7 @@ angular.
     module('foodselect').
     component('foodselect',{
         templateUrl: 'page1/foodselectsite.html',
-        controller: ['$http','$scope', function FoodListController($http, $scope, messages) {
+        controller: ['$http','$scope', function FoodListController($http, $scope) {
             
             var self = this;
             $http.get('http://ec2-13-238-161-127.ap-southeast-2.compute.amazonaws.com:9000/food')
@@ -12,8 +12,8 @@ angular.
             });
             
             $scope.edit = function(foods) {
-                $scope.selectedFood = foods.food;
-                alert(foods.food);
+                $scope.selectedFood = foods.id;
+                //alert(foods.food);
             };
             }],
         
