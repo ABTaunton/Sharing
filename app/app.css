@@ -1,20 +1,16 @@
 /* app css stylesheet */
-html {
-  height: 150%; 
+html{
+  height: 300%;
 }
 #body{
-  height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  background: linear-gradient(to bottom, #ffffff 0%, rgb(255, 255, 204) 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, rgb(255, 255, 204) 100%) no-repeat;
   opacity: 0.9;
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 #titleImage {
   position: relative;;
   left: 12%;
-  width:12%;
+  width:8%;
   float:left;
   margin-right: 0.7em;
 }
