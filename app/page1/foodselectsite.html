@@ -1,7 +1,7 @@
 
   <div id="gettingStarted">
       <p>
-          <button id="getStartedButton" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <button id="getStartedButton" class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
               Get started
             </button>
         </p>
@@ -20,7 +20,6 @@
           <div ng-repeat="foods in $ctrl.foodName | filter:$ctrl.query">
           <ul id="myUL">
             <li><a ng-click="edit(foods)" href="/#!/foods/winelist/{{foods.id}}">{{foods.food}}</a></li>
-              </form>
           </ul>
           </div>
       </div>

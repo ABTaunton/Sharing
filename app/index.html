@@ -34,13 +34,18 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </head>
-<body>
-  <img id="titleImage" src="/images/wficon.png" href="winefinder.ml">
-  <H1 id="title" class="display-3">WineFinder</H1>
-  <h3 id="slogan">Choose well</h3>
+<body id="body">
+  <img id="titleImage" src="/images/wficon.png">
+  <H1 id="title" class="display-1">WineFinder</H1>
+  <h4 id="slogan">We choose well</h4>
 
   <div ng-view></div>
+
+  <div class="footer">
+      <p>WineFinder is a free application and is not liable for dissatisfied purchases. Your feedback is welcomed and will be used to improve our service.</p>
+    </div>
 
 </body>
 </html>

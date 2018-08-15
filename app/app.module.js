@@ -1,6 +1,6 @@
 // Declare app level module which depends on views, and components
 angular
   .module('WineFinder', [
-  'ngRoute','foodselect', 'winelist', 
+  'ngRoute','foodselect', 'winelist',  
     ]);
   

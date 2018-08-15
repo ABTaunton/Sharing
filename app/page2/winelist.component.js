@@ -10,12 +10,6 @@ angular.
       $http.get('http://ec2-13-238-161-127.ap-southeast-2.compute.amazonaws.com:9000' + location)
           .then(function(response) {
           self.wineList = response.data;
-          console.log(response.data);
-          console.log(location);
       });
-
-      //$scope.selectedFood = foods.food;
-      //console.log($scope.selectedFood)
     }]
-
   });

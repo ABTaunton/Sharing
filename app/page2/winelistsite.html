@@ -1,9 +1,7 @@
-<div>
-    <h3> Recommended wines to accompany your selection</h3>
-    </div>
-    <div id="wineList">
-    <h1 id="wineListRepeater" ng-repeat="x in $ctrl.wineList">{{x.Label}}</h1>
+<div>    
+    <h5 id="recommendedWines"> Recommended wines to accompany your selection</h5>
 
-
+    <ul id="wineList">
+        <li ng-repeat="x in $ctrl.wineList"><a id="wineListRepeater">{{x.Label}} {{x.Vintage}}</a></li>
+    </ul>
 </div>
-
