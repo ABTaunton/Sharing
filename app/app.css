@@ -83,3 +83,14 @@
 #myUL li a:hover:not(.header) {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
+#wineList {
+  counter-reset: section;
+  position: relative;
+  left: 10%;
+  width:40%;
+}
+
+#wineListRepeater::before {
+  counter-increment: section;
+  content: counter(section) " ";
+}
