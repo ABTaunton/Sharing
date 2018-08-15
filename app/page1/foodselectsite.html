@@ -1,8 +1,21 @@
+
+  <div id="gettingStarted">
+      <p>
+          <button id="getStartedButton" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Get started
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            It's simple - Select a meal from the list below and we'll recommend some wines that'll taste great with it.
+          </div>
+        </div>
+      </div>
+    
 <div >
     <div >
       <div >
         <!--Sidebar content-->
-        <h6 id="intro">Tell us, what's for dinner?</h6>
           <input type="text" id="foodInput" placeholder="Search for food..." ng-model="$ctrl.query">
           <div ng-repeat="foods in $ctrl.foodName | filter:$ctrl.query">
           <ul id="myUL">
